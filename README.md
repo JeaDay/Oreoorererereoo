@@ -11,37 +11,3 @@ The output may not be an array of strings
 The cookie must overlap the filling by one character on each side
 The characters used for the output don't have to match the output below (█ and ░), they just have to be different non-whitespace characters for the two parts of the cookie
 The whitespace padding on the left side of the filling is required, and any trailing whitespace is optional
-
-# Examples
-
-Input: oreo
-Output:
-████
- ░░ 
-████
-
-Input: o
-Output:
-█
-
-Input: re
-Output: (two spaces)
-
-
-Input: rere
-Output:
- ░░ 
- ░░ 
-
-Input: oreoorererereoo
-Output:
-███████████████
- ░░░░░░░░░░░░░ 
-███████████████
-███████████████
- ░░░░░░░░░░░░░ 
- ░░░░░░░░░░░░░ 
- ░░░░░░░░░░░░░ 
- ░░░░░░░░░░░░░ 
-███████████████
-███████████████
