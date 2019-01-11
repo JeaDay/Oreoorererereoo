@@ -22,6 +22,9 @@ The whitespace padding on the left side of the filling is required, and any trai
 
 100% code coverage
 
-Clean lint rules
+No pods
+
+
+# Demo (Slow GIF)
 
 ![](Demo.gif)
