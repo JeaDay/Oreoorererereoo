@@ -23,6 +23,10 @@ final class CookieBakerTests: XCTestCase {
         XCTAssert(layer?.type == LayerType.Toping)
     }
     
+    func testBakeEmptyToppingLayer() {
+        XCTAssertNil(CookieBaker().bakeLayer(cookie: "", index: 0))
+    }
+    
     func tesBaketMissingLayer() {
         XCTAssertNil(CookieBaker().bakeLayer(cookie: "Orereo", index: 10))
     }
@@ -37,5 +41,9 @@ final class CookieBakerTests: XCTestCase {
     
     func testBakeNonValidCookie() {
         XCTAssertNil(CookieBaker().bake(cookie: "Ore0reo"))
+    }
+    
+    func testBakeEmptyCookie() {
+        XCTAssertNil(CookieBaker().bake(cookie: ""))
     }
 }

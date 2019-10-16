@@ -33,20 +33,10 @@ final class CookieBaker {
     
     
     func bakeLayer(cookie: String, index: Int) -> CookieLayer? {
-        guard !cookie.isEmpty, cookie.count > index else {
-            return nil
-        }
+        guard !cookie.isEmpty, cookie.count > index else { return nil }
         
         let character = cookie[index]
         
-        if character == "o" || character == "O" {
-            return CookieLayer(place: index,
-                               type: .Toping)
-        } else {
-            return CookieLayer(place: index,
-                               type: .Filling)
-        }
+        return character == "o" || character == "O" ? CookieLayer(place: index, type: .Toping) : CookieLayer(place: index, type: .Filling)
     }
-    
-
 }
